@@ -38,3 +38,8 @@ def eliminar_libro(request, id):
         return redirect('listar_libros')
     return render(request, 'libros/eliminar_libro.html', {'libro': libro})
 
+
+
+#manifest.json
+def manifest(request):
+    return render(request, 'manifest.json', content_type='application/json')
